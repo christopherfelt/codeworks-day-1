@@ -1,5 +1,202 @@
-h1,
-h2,
-h3 {
-  color: cornflowerblue;
+:root {
+  --dark-green: #0d2818;
+  --purple: #30321c;
+  --light-blue: #4a4b2f;
+  --light-green: #561f37;
+  --eggshell: #181d27;
+}
+
+p {
+  font-weight: 900;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  border: 1px solid var(--light-green);
+  position: relative;
+  background-color: var(--light-blue);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  width: 75%;
+  transform: translateY(-50%) translateX(12.5%);
+  /* border: 1px solid green; */
+  padding: 10px;
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 75px;
+  font-weight: 900;
+}
+
+.grid-container {
+  display: grid;
+  /* position: relative; */
+}
+
+.grid-container > div {
+  border: 1px solid black;
+  background-color: var(--purple);
+  border: 2px solid var(--dark-green);
+}
+
+.grid-container > div:hover {
+  background-color: var(--light-blue);
+}
+
+.top-left {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.top-middle {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.top-right {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.center-left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.center-middle {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.center-right {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.bottom-left {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.bottom-middle {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.bottom-right {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.top-left ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.top-left li::before {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-size: 40px;
+  background-image: url("https://robohash.org/robotbullet1");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: left center;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.top-middle ol {
+  list-style-type: georgian;
+}
+
+.top-right ul {
+  list-style-type: none;
+}
+
+.top-right li::before {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-size: 40px;
+  background-image: url("https://robohash.org/robotbullet1/?set=set2");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: left center;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.center-left ol {
+  list-style-type: upper-roman;
+}
+
+.center-middle {
+}
+
+.center-right ol {
+  list-style-type: katakana;
+}
+
+.bottom-left ul {
+  list-style-type: none;
+}
+
+.bottom-left li::before {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-size: 40px;
+  background-image: url("https://robohash.org/robotbullet1/?set=set3");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: left center;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.bottom-middle ol {
+  list-style-type: hiragana;
+}
+
+.bottom-right ul {
+  list-style-type: none;
+}
+
+.bottom-right li::before {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-size: 40px;
+  background-image: url("https://robohash.org/robotbullet1/?set=4");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: left center;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.relative {
+  position: relative;
+  width: 90%;
+  padding: 0;
+}
+
+.absolute-center {
+  position: relative;
+  margin: 10px;
+  transform: translateX(5%);
+  /* border: 1px solid green; */
+  padding: 0;
+  text-align: center;
 }
